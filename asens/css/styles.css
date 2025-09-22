@@ -3,12 +3,11 @@
 ======================= */
 body {
   margin: 0;
-  font-family: 'Segoe UI', Arial, sans-serif; /* Fuente limpia y moderna */
+  font-family: "Segoe UI", Arial, sans-serif; /* Fuente limpia y moderna */
   background: #f9f9f9; /* Fondo claro */
   color: #333;
   line-height: 1.6;
 }
-
 
 .brand-text {
   color: #f0c040 !important; /* Amarillo de marca */
@@ -24,15 +23,12 @@ body {
   color: #f0c040 !important; /* Hover amarillo */
 }
 
-
-
-
 /* =======================
    CARRUSEL
 ======================= */
 #carouselExampleCaptions .carousel-item img {
-  height: 700px;         /* Altura ajustada tipo banner */
-  object-fit: cover;     /* Mantiene proporción y recorta si sobra */
+  height: 700px; /* Altura ajustada tipo banner */
+  object-fit: cover; /* Mantiene proporción y recorta si sobra */
 }
 
 #carouselExampleCaptions .carousel-caption {
@@ -64,7 +60,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
 }
 
 header .logo {
@@ -111,7 +107,6 @@ header .acciones a:hover {
   background: linear-gradient(135deg, #000000, #313131) !important;
 }
 
-
 .hero {
   display: flex;
   justify-content: space-between;
@@ -143,7 +138,7 @@ header .acciones a:hover {
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* =======================
@@ -182,13 +177,13 @@ header .acciones a:hover {
   border-radius: 8px;
   padding: 15px;
   text-align: center;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .producto:hover {
   transform: translateY(-6px);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
 }
 
 .producto .img {
@@ -244,8 +239,6 @@ footer button:hover {
   color: #222;
 }
 
-
-
 .icon-box {
   width: 70px;
   height: 70px;
@@ -263,7 +256,6 @@ footer button:hover {
   box-shadow: 0 0 15px rgba(240, 192, 64, 0.8);
 }
 
-
 .icon-box {
   width: 80px;
   height: 80px;
@@ -277,7 +269,7 @@ footer button:hover {
 }
 
 .icon-box img {
-  width: 60%;   /* Ajusta tamaño dentro del círculo */
+  width: 60%; /* Ajusta tamaño dentro del círculo */
   height: auto;
 }
 
@@ -286,13 +278,6 @@ footer button:hover {
   box-shadow: 0 0 15px rgba(240, 192, 64, 0.8);
 }
 
-
-
-
-
-
-
-
-
-
-
+.img-detalle {
+  max-width: 400px; /* ajusta a tu gusto */
+}
