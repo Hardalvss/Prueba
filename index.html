@@ -4,185 +4,190 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Urban C - Tienda Online</title>
+
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Estilos personalizados -->
   <link rel="stylesheet" href="asens/css/styles.css">
 </head>
 <body>
- 
 
-    <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
-  <div class="container">
-    <!-- Logo + Nombre -->
-    <a class="navbar-brand d-flex align-items-center" href="#">
-      <img src="asens/img/logo.png" alt="Urban C" width="40" height="40" class="me-2 rounded-circle">
-      <span class="fw-bold text-light">Urban C</span>
-    </a>
+  <!-- ================= HEADER ================= -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+      <div class="container">
 
-    <!-- Botón hamburguesa en móvil -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
-            aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+        <!-- Logo + Nombre -->
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="asens/img/logo.png" alt="Urban C" width="40" height="40" class="me-2 rounded-circle">
+          <span class="fw-bold text-light">Urban C</span>
+        </a>
 
-    <!-- Links -->
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
-        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
-        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-        <li class="nav-item"><a class="nav-link" href="registro.html">Registro</a></li>
-        <li class="nav-item">
-          <a class="nav-link" href="carrito.html"><i class="bi bi-cart-fill"></i> Carrito</a>
-        </li>
-      </ul>
+        <!-- Botón hamburguesa -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
+                aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menú -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+            <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+            <li class="nav-item"><a class="nav-link" href="registro.html">Registro</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="carrito.html"><i class="bi bi-cart-fill"></i> Carrito</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- ================= END HEADER ================= -->
+
+
+  <!-- ================= MAIN ================= -->
+  <main>
+
+    <!-- HERO / CARRUSEL -->
+    <section id="hero">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicadores -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- Slides -->
+        <div class="carousel-inner">
+
+          <article class="carousel-item active">
+            <img src="asens/img/carrusel1.jpg" class="d-block w-100" alt="Nueva Colección">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+              <h5 class="text-warning">Urban C – Nueva Colección</h5>
+              <p class="text-light">Descubre los pantalones cargo más fresh de la temporada. Estilo, comodidad y actitud.</p>
+            </div>
+          </article>
+
+          <article class="carousel-item">
+            <img src="asens/img/carrusel2.jpg" class="d-block w-100" alt="Estilo Callejero">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+              <h5 class="text-info">Estilo Callejero</h5>
+              <p class="text-light">Diseñados para moverte libremente en la ciudad. Moda urbana hecha para ti.</p>
+            </div>
+          </article>
+
+          <article class="carousel-item">
+            <img src="asens/img/carrusel3.jpg" class="d-block w-100" alt="Ofertas Exclusivas">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+              <h5 class="text-danger">Ofertas Exclusivas</h5>
+              <p class="text-light">Precios únicos por tiempo limitado. Renueva tu estilo hoy mismo.</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Controles -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+    <!-- END HERO -->
+
+
+    <!-- SECCIÓN DE CONFIANZA -->
+    <section class="py-5" style="background: linear-gradient(135deg, #111, #222); color: #fff;">
+      <div class="container">
+        <h2 class="text-center mb-5 fw-bold text-light">¿Por qué confiar en Urban C?</h2>
+
+        <div class="row text-center">
+
+          <article class="col-md-4 mb-4">
+            <figure class="icon-box mx-auto mb-3">
+              <img src="asens/img/envio (1).png" alt="Envíos rápidos" class="img-fluid">
+            </figure>
+            <h5 class="fw-bold">Envíos Rápidos</h5>
+            <p class="text-light">Despachamos tus compras en tiempo récord, directo a tu puerta.</p>
+          </article>
+
+          <article class="col-md-4 mb-4">
+            <figure class="icon-box mx-auto mb-3">
+              <img src="asens/img/pago.png" alt="Pago seguro" class="img-fluid">
+            </figure>
+            <h5 class="fw-bold">Pago Seguro</h5>
+            <p class="text-light">Tus datos y transacciones están protegidas al 100%.</p>
+          </article>
+
+          <article class="col-md-4 mb-4">
+            <figure class="icon-box mx-auto mb-3">
+              <img src="asens/img/garantia.png" alt="Cambios garantizados" class="img-fluid">
+            </figure>
+            <h5 class="fw-bold">Cambios Garantizados</h5>
+            <p class="text-light">Si algo no te convence, te lo cambiamos sin complicaciones.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+    <!-- END SECCIÓN DE CONFIANZA -->
+
+  </main>
+  <!-- ================= END MAIN ================= -->
+
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="text-light pt-5" style="background: #111;">
+    <div class="container">
+      <div class="row">
+
+        <!-- Marca -->
+        <section class="col-md-4 mb-4">
+          <h5 class="fw-bold text-warning">Urban C</h5>
+          <p class="text-white">Ropa urbana con estilo y comodidad. Vive la moda callejera con nosotros.</p>
+        </section>
+
+        <!-- Enlaces -->
+        <nav class="col-md-4 mb-4">
+          <h6 class="fw-bold text-white">Enlaces</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none">Inicio</a></li>
+            <li><a href="productos.html" class="text-white text-decoration-none">Productos</a></li>
+            <li><a href="nosotros.html" class="text-white text-decoration-none">Nosotros</a></li>
+            <li><a href="contacto.html" class="text-white text-decoration-none">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <!-- Redes sociales -->
+        <aside class="col-md-4 mb-4">
+          <h6 class="fw-bold text-white">Síguenos</h6>
+          <div class="d-flex gap-3">
+            <a href="#" class="text-warning fs-4"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-warning fs-4"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-warning fs-4"><i class="bi bi-tiktok"></i></a>
+          </div>
+        </aside>
+
+      </div>
+
+      <!-- Línea final -->
+      <div class="text-center py-3 border-top border-secondary mt-3">
+        <small class="text-white">&copy; 2025 Urban C. Todos los derechos reservados.</small>
+      </div>
     </div>
-  </div>
-</nav>
+  </footer>
+  <!-- ================= END FOOTER ================= -->
 
 
-
-
-  <!-- Carrusel con captions -->
-  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-    <!-- Indicadores -->
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
-    </div>
-
-    <!-- Slides -->
-    <div class="carousel-inner">
-      <!-- Slide 1 -->
-      <div class="carousel-item active">
-        <img src="asens/img/carrusel1.jpg" class="d-block w-100" alt="Nueva Colección">
-        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
-          <h5 class="text-warning">Urban C – Nueva Colección</h5>
-          <p class="text-light">Descubre los pantalones cargo más fresh de la temporada. Estilo, comodidad y actitud.</p>
-        </div>
-      </div>
-
-      <!-- Slide 2 -->
-      <div class="carousel-item">
-        <img src="asens/img/carrusel2.jpg" class="d-block w-100" alt="Estilo Callejero">
-        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
-          <h5 class="text-info">Estilo Callejero</h5>
-          <p class="text-light">Diseñados para moverte libremente en la ciudad. Moda urbana hecha para ti.</p>
-        </div>
-      </div>
-
-      <!-- Slide 3 -->
-      <div class="carousel-item">
-        <img src="asens/img/carrusel3.jpg" class="d-block w-100" alt="Ofertas Exclusivas">
-        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
-          <h5 class="text-danger">Ofertas Exclusivas</h5>
-          <p class="text-light">Precios únicos por tiempo limitado. Renueva tu estilo hoy mismo.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Controles -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-      <span class="visually-hidden">Anterior</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-      <span class="visually-hidden">Siguiente</span>
-    </button>
-  </div>
-
-
-
-<!-- Sección de confianza creativa con imágenes -->
-<section class="py-5" style="background: linear-gradient(135deg, #111, #222); color: #fff;">
-  <div class="container">
-    <h2 class="text-center mb-5 fw-bold text-light">¿Por qué confiar en Urban C?</h2>
-    <div class="row text-center">
-
-      <!-- Envíos rápidos -->
-      <div class="col-md-4 mb-4">
-        <div class="icon-box mx-auto mb-3">
-          <img src="asens/img/envio (1).png" alt="Envíos rápidos" class="img-fluid">
-        </div>
-        <h5 class="fw-bold">Envíos Rápidos</h5>
-        <p class="text-light">Despachamos tus compras en tiempo récord, directo a tu puerta.</p>
-      </div>
-
-      <!-- Pago seguro -->
-      <div class="col-md-4 mb-4">
-        <div class="icon-box mx-auto mb-3">
-          <img src="asens/img/pago.png" alt="Pago seguro" class="img-fluid">
-        </div>
-        <h5 class="fw-bold">Pago Seguro</h5>
-        <p class="text-light">Tus datos y transacciones están protegidas al 100%.</p>
-      </div>
-
-      <!-- Cambios garantizados -->
-      <div class="col-md-4 mb-4">
-        <div class="icon-box mx-auto mb-3">
-          <img src="asens/img/garantia.png" alt="Cambios garantizados" class="img-fluid">
-        </div>
-        <h5 class="fw-bold">Cambios Garantizados</h5>
-        <p class="text-light">Si algo no te convence, te lo cambiamos sin complicaciones.</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-
-
-<!-- Footer -->
-<footer class="text-light pt-5" style="background: #111;">
-  <div class="container">
-    <div class="row">
-
-      <!-- Logo + nombre -->
-      <div class="col-md-4 mb-4">
-        <h5 class="fw-bold text-warning">Urban C</h5>
-        <p class="text-white">Ropa urbana con estilo y comodidad. Vive la moda callejera con nosotros.</p>
-      </div>
-
-      <!-- Links rápidos -->
-      <div class="col-md-4 mb-4">
-        <h6 class="fw-bold text-white">Enlaces</h6>
-        <ul class="list-unstyled">
-          <li><a href="#" class="text-white text-decoration-none">Inicio</a></li>
-          <li><a href="productos.html" class="text-white text-decoration-none">Productos</a></li>
-          <li><a href="nosotros.html" class="text-white text-decoration-none">Nosotros</a></li>
-          <li><a href="contacto.html" class="text-white text-decoration-none">Contacto</a></li>
-        </ul>
-      </div>
-
-      <!-- Redes sociales -->
-      <div class="col-md-4 mb-4">
-        <h6 class="fw-bold text-white">Síguenos</h6>
-        <div class="d-flex gap-3">
-          <a href="#" class="text-warning fs-4"><i class="bi bi-instagram"></i></a>
-          <a href="#" class="text-warning fs-4"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="text-warning fs-4"><i class="bi bi-tiktok"></i></a>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Línea final -->
-    <div class="text-center py-3 border-top border-secondary mt-3">
-      <small class="text-white">&copy; 2025 Urban C. Todos los derechos reservados.</small>
-    </div>
-  </div>
-</footer>
-
-  
-
-
-  
   <!-- Bootstrap JS (incluye Popper) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>

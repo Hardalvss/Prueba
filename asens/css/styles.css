@@ -3,15 +3,33 @@
 ======================= */
 body {
   margin: 0;
-  font-family: "Segoe UI", Arial, sans-serif; /* Fuente limpia y moderna */
-  background: #f9f9f9; /* Fondo claro */
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f9f9f9;
   color: #333;
   line-height: 1.6;
 }
 
+/* Marca */
 .brand-text {
-  color: #f0c040 !important; /* Amarillo de marca */
+  color: #f0c040 !important;
   font-size: 1.3rem;
+}
+
+
+/* =======================
+   NAVBAR / HEADER
+======================= */
+.navbar-nav {
+  margin-left: auto !important;
+  width: max-content; /* 🔑 solo ocupa lo necesario */
+}
+
+.navbar-collapse {
+  flex-grow: 1; /* 🔑 hace que el espacio extra quede entre logo y menú */
+}
+
+.navbar {
+  background: linear-gradient(135deg, #000000, #313131) !important;
 }
 
 .navbar .nav-link {
@@ -20,44 +38,14 @@ body {
 }
 
 .navbar .nav-link:hover {
-  color: #f0c040 !important; /* Hover amarillo */
+  color: #f0c040 !important;
 }
 
-/* =======================
-   CARRUSEL
-======================= */
-#carouselExampleCaptions .carousel-item img {
-  height: 700px; /* Altura ajustada tipo banner */
-  object-fit: cover; /* Mantiene proporción y recorta si sobra */
-}
 
-#carouselExampleCaptions .carousel-caption {
-  background: rgba(0, 0, 0, 0.55); /* Fondo oscuro semitransparente */
-  border-radius: 8px;
-  padding: 15px 20px;
-  max-width: 500px; /* Mantener legible */
-  margin: auto;
-}
-
-#carouselExampleCaptions h5 {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #ffffff; /* Destacar el título */
-}
-
-#carouselExampleCaptions p {
-  font-size: 1.2rem;
-  color: #fff; /* Texto claro sobre fondo oscuro */
-}
-
-/* =======================
-   HEADER / NAVBAR
-======================= */
 header {
-  background: #000000; /* Fondo oscuro */
+  background: #000000;
   color: #fff;
   padding: 15px 30px;
-  display: flex;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
@@ -70,18 +58,18 @@ header .logo {
 }
 
 header .logo img {
-  height: 45px; /* Tamaño del logo */
+  height: 45px;
 }
 
 header nav a {
   margin: 0 12px;
   text-decoration: none;
-  color: #ddd; /* Gris claro */
+  color: #ddd;
   transition: color 0.3s;
 }
 
 header nav a:hover {
-  color: #ffffff; /* Amarillo en hover */
+  color: #ffffff;
 }
 
 header .acciones {
@@ -100,13 +88,35 @@ header .acciones a:hover {
 }
 
 /* =======================
-   HERO / PORTADA
+   CARRUSEL
 ======================= */
-
-.navbar {
-  background: linear-gradient(135deg, #000000, #313131) !important;
+#carouselExampleCaptions .carousel-item img {
+  height: 700px;
+  object-fit: cover;
 }
 
+#carouselExampleCaptions .carousel-caption {
+  background: rgba(0, 0, 0, 0.55);
+  border-radius: 8px;
+  padding: 15px 20px;
+  max-width: 500px;
+  margin: auto;
+}
+
+#carouselExampleCaptions h5 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+#carouselExampleCaptions p {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+/* =======================
+   HERO / PORTADA
+======================= */
 .hero {
   display: flex;
   justify-content: space-between;
@@ -194,6 +204,31 @@ header .acciones a:hover {
 }
 
 /* =======================
+   ICONOS / FEATURES
+======================= */
+.icon-box {
+  width: 80px;
+  height: 80px;
+  background: #f0c040;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.icon-box img {
+  width: 60%;
+  height: auto;
+}
+
+.icon-box:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(240, 192, 64, 0.8);
+}
+
+/* =======================
    FOOTER
 ======================= */
 footer {
@@ -239,45 +274,9 @@ footer button:hover {
   color: #222;
 }
 
-.icon-box {
-  width: 70px;
-  height: 70px;
-  background: #f0c040; /* Amarillo de marca */
-  color: #111;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.icon-box:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 15px rgba(240, 192, 64, 0.8);
-}
-
-.icon-box {
-  width: 80px;
-  height: 80px;
-  background: #f0c040; /* Amarillo de marca */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  overflow: hidden; /* 🔑 Recorta la imagen dentro del círculo */
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.icon-box img {
-  width: 60%; /* Ajusta tamaño dentro del círculo */
-  height: auto;
-}
-
-.icon-box:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 15px rgba(240, 192, 64, 0.8);
-}
-
+/* =======================
+   DETALLES
+======================= */
 .img-detalle {
-  max-width: 400px; /* ajusta a tu gusto */
+  max-width: 400px;
 }
