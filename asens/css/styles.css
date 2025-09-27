@@ -1,280 +1,74 @@
-/* =======================
-   ESTILOS GENERALES
-======================= */
-body {
-  margin: 0;
-  font-family: "Segoe UI", Arial, sans-serif;
-  background: #f9f9f9;
-  color: #333;
+    .navbar-custom {
+      background-color: #222; /* Negro para Urban C */
+    }
+    .navbar-custom .nav-link,
+    .navbar-custom .navbar-brand {
+      color: #fff;
+    }
+    .navbar-custom .nav-link:hover {
+      color: #c9c9c9; /* gris claro en hover */ }
+
+
+    section {
+  background-color: #f8f9fa; /* gris claro de fondo */
+}
+
+h2 {
+  color: #212529; /* texto oscuro elegante */
+}
+
+p {
+  color: #333333;
+  font-size: 1.1rem;
   line-height: 1.6;
 }
 
-/* Marca */
-.brand-text {
-  color: #f0c040 !important;
-  font-size: 1.3rem;
-}
-
-
-/* =======================
-   NAVBAR / HEADER
-======================= */
-.navbar-nav {
-  margin-left: auto !important;
-  width: max-content; /* 🔑 solo ocupa lo necesario */
-}
-
-.navbar-collapse {
-  flex-grow: 1; /* 🔑 hace que el espacio extra quede entre logo y menú */
-}
-
-.navbar {
-  background: linear-gradient(135deg, #000000, #313131) !important;
-}
-
-.navbar .nav-link {
-  font-weight: 500;
-  transition: color 0.3s;
-}
-
-.navbar .nav-link:hover {
-  color: #f0c040 !important;
-}
-
-
-header {
-  background: #000000;
-  color: #fff;
-  padding: 15px 30px;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
-}
-
-header .logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-header .logo img {
-  height: 45px;
-}
-
-header nav a {
-  margin: 0 12px;
-  text-decoration: none;
-  color: #ddd;
-  transition: color 0.3s;
-}
-
-header nav a:hover {
-  color: #ffffff;
-}
-
-header .acciones {
-  font-size: 14px;
-}
-
-header .acciones a {
-  color: #f0c040;
-  text-decoration: none;
-  margin: 0 6px;
-  font-weight: 500;
-}
-
-header .acciones a:hover {
-  text-decoration: underline;
-}
-
-/* =======================
-   CARRUSEL
-======================= */
-#carouselExampleCaptions .carousel-item img {
-  height: 700px;
-  object-fit: cover;
-}
-
-#carouselExampleCaptions .carousel-caption {
-  background: rgba(0, 0, 0, 0.55);
-  border-radius: 8px;
-  padding: 15px 20px;
-  max-width: 500px;
-  margin: auto;
-}
-
-#carouselExampleCaptions h5 {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #ffffff;
-}
-
-#carouselExampleCaptions p {
-  font-size: 1.2rem;
-  color: #fff;
-}
-
-/* =======================
-   HERO / PORTADA
-======================= */
-.hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 60px 8%;
-  background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
-}
-
-.hero-text {
-  max-width: 50%;
-}
-
-.hero-text h1 {
-  font-size: 2.8rem;
-  margin-bottom: 15px;
-  color: #222;
-}
-
-.hero-text p {
-  font-size: 1.2rem;
-  color: #555;
-}
-
-.hero-img {
-  width: 40%;
-  height: 250px;
-  background: #ccc;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-/* =======================
-   BOTONES
-======================= */
-.btn {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 12px 24px;
-  background: #000000;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 4px;
-  font-weight: bold;
-  transition: background 0.3s, transform 0.2s;
-}
-
-.btn:hover {
-  background: #f0c040;
-  color: #222;
-  transform: translateY(-2px);
-}
-
-/* =======================
-   SECCIÓN DE PRODUCTOS
-======================= */
 .productos {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 25px;
-  padding: 50px 8%;
+  background-color: #dbdbdb; /* gris claro más oscuro */
 }
 
-.producto {
-  background: #fff;
-  border-radius: 8px;
-  padding: 15px;
-  text-align: center;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.producto:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
-}
-
-.producto .img {
-  height: 180px;
-  background: #ddd;
-  margin-bottom: 12px;
-  border-radius: 6px;
-}
-
-/* =======================
-   ICONOS / FEATURES
-======================= */
-.icon-box {
-  width: 80px;
-  height: 80px;
-  background: #f0c040;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  overflow: hidden;
-  transition: transform 0.3s, box-shadow 0.3s;
+.productos h2 {
+  color: #111; /* título más fuerte */
 }
 
 .icon-box img {
-  width: 60%;
-  height: auto;
+  width: 100px;   /* ancho fijo */
+  height: 100px;  /* alto fijo */
+  object-fit: contain; /* evita deformación */
 }
 
-.icon-box:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 15px rgba(240, 192, 64, 0.8);
-}
-
-/* =======================
-   FOOTER
-======================= */
-footer {
-  background: #000000;
-  color: #fff;
-  padding: 35px 20px;
-  text-align: center;
-}
-
-footer .links a {
-  color: #f0c040;
-  text-decoration: none;
-  margin: 0 10px;
-}
-
-footer .links a:hover {
-  text-decoration: underline;
-}
-
-footer .newsletter {
-  margin: 20px 0;
-}
-
-footer input[type="email"] {
-  padding: 10px;
-  border: none;
-  border-radius: 4px;
-  margin-right: 8px;
-  width: 220px;
-}
-
-footer button {
-  padding: 10px 18px;
-  background: #f0c040;
-  border: none;
-  border-radius: 4px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-footer button:hover {
-  background: #fff;
-  color: #222;
-}
-
-
+/* Estilo para las imágenes de detalle de producto */
 .img-detalle {
-  max-width: 400px;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+
+
+/* ===== FOOTER SIMPLE ===== */
+.footer {
+  background: #0d0d0d;
+}
+
+/* Enlaces */
+.footer-link {
+  color: #bbbbbb;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #ffc107;
+}
+
+/* Redes sociales */
+.social-link {
+  color: #ffc107;
+  font-size: 1.4rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-link:hover {
+  color: #ffffff;
+  transform: scale(1.2);
 }

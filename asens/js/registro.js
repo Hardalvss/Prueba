@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const nombre = document.getElementById("nombre").value;
     const email = document.getElementById("email").value;
-    const direccion = document.getElementById("Direccion").value;
-    const comuna = document.getElementById("Comuna").value;
+    const direccion = document.getElementById("direccion").value;
+    const comuna = document.getElementById("comuna").value;
     const password = document.getElementById("password").value;
     const confirmPassword = document.getElementById("confirmPassword").value;
 

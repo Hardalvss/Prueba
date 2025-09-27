@@ -20,35 +20,44 @@
 <body>
 
   <!-- ================= HEADER ================= -->
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
-      <div class="container">
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <!-- Logo + Nombre -->
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="asens/img/logo.png" alt="Urban C" width="40" height="40" class="me-2 rounded-circle">
+        <span class="fw-bold">Urban C</span>
+      </a>
 
-        <!-- Logo -->
-        <a class="navbar-brand d-flex align-items-center" href="index.html">
-          <img src="asens/img/logo.png" alt="Urban C" width="40" height="40" class="me-2 rounded-circle" />
-          <span class="fw-bold brand-text">Urban C</span>
-        </a>
+      <!-- Botón hamburguesa móvil -->
+      <button
+        class="navbar-toggler text-white"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <!-- Botón móvil -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Menú -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link active" href="productos.html">Productos</a></li>
-            <li class="nav-item"><a class="nav-link" href="detalle-producto.html">Detalles</a></li>
-            <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
-            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-          </ul>
-        </div>
-
+      <!-- Enlaces -->
+      <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="blogs.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="login.html">Iniciar sesión</a></li>
+          <li class="nav-item"><a class="nav-link" href="registro.html">Registrar</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="bi bi-cart"></i> Carrito (0)</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-  </header>
+    </div>
+  </nav>
   <!-- ================= END HEADER ================= -->
 
 
@@ -67,9 +76,9 @@
               <img src="asens/img/pantalon1.jpeg" class="card-img-top" alt="Pantalón Cargo" />
               <div class="card-body text-center">
                 <h5 class="card-title">Pantalón Cargo</h5>
-                <p class="fw-bold text-warning">$19.990</p>
-                <a href="detalle.html" class="btn btn-outline-dark btn-sm me-2">Ver más</a>
-                <a href="#" class="btn btn-warning btn-sm">Agregar</a>
+                <p class="fw-bold text-dark">$19.990</p>
+                <a href="detalle-producto.html" class="btn btn-outline-dark btn-sm me-2">Ver más</a>
+                <a href="#" class="btn btn-dark btn-sm">Agregar</a>
               </div>
             </div>
           </article>
@@ -79,9 +88,9 @@
               <img src="asens/img/pantalon2.jpeg" class="card-img-top" alt="Pantalón Jogger" />
               <div class="card-body text-center">
                 <h5 class="card-title">Pantalón Jogger</h5>
-                <p class="fw-bold text-warning">$21.990</p>
-                <a href="detalle.html" class="btn btn-outline-dark btn-sm me-2">Ver más</a>
-                <a href="#" class="btn btn-warning btn-sm">Agregar</a>
+                <p class="fw-bold text-dark">$21.990</p>
+                <a href="detalle-producto.html" class="btn btn-outline-dark btn-sm me-2">Ver más</a>
+                <a href="#" class="btn btn-dark btn-sm">Agregar</a>
               </div>
             </div>
           </article>
@@ -91,9 +100,9 @@
               <img src="asens/img/pantalon3.jpeg" class="card-img-top" alt="Pantalón Skinny" />
               <div class="card-body text-center">
                 <h5 class="card-title">Pantalón Skinny</h5>
-                <p class="fw-bold text-warning">$17.990</p>
-                <a href="detalle.html" class="btn btn-outline-dark btn-sm me-2">Ver más</a>
-                <a href="#" class="btn btn-warning btn-sm">Agregar</a>
+                <p class="fw-bold text-dark">$17.990</p>
+                <a href="detalle-producto.html" class="btn btn-outline-dark btn-sm me-2">Ver más</a>
+                <a href="#" class="btn btn-dark btn-sm">Agregar</a>
               </div>
             </div>
           </article>
@@ -103,9 +112,9 @@
               <img src="asens/img/pantalon4.jpeg" class="card-img-top" alt="Pantalón Recto" />
               <div class="card-body text-center">
                 <h5 class="card-title">Pantalón Recto</h5>
-                <p class="fw-bold text-warning">$22.990</p>
-                <a href="detalle.html" class="btn btn-outline-dark btn-sm me-2">Ver más</a>
-                <a href="#" class="btn btn-warning btn-sm">Agregar</a>
+                <p class="fw-bold text-dark">$22.990</p>
+                <a href="detalle-producto.html" class="btn btn-outline-dark btn-sm me-2">Ver más</a>
+                <a href="#" class="btn btn-dark btn-sm">Agregar</a>
               </div>
             </div>
           </article>
@@ -115,9 +124,9 @@
               <img src="asens/img/pantalon5.jpeg" class="card-img-top" alt="Pantalón 5" />
               <div class="card-body text-center">
                 <h5 class="card-title">Pantalón 5</h5>
-                <p class="fw-bold text-warning">$19.990</p>
-                <a href="detalle.html" class="btn btn-outline-dark btn-sm me-2">Ver más</a>
-                <a href="#" class="btn btn-warning btn-sm">Agregar</a>
+                <p class="fw-bold text-dark">$19.990</p>
+                <a href="detalle-producto.html" class="btn btn-outline-dark btn-sm me-2">Ver más</a>
+                <a href="#" class="btn btn-dark btn-sm">Agregar</a>
               </div>
             </div>
           </article>
@@ -127,9 +136,9 @@
               <img src="asens/img/pantalon6.jpeg" class="card-img-top" alt="Pantalón 6" />
               <div class="card-body text-center">
                 <h5 class="card-title">Pantalón 6</h5>
-                <p class="fw-bold text-warning">$19.990</p>
-                <a href="detalle.html" class="btn btn-outline-dark btn-sm me-2">Ver más</a>
-                <a href="#" class="btn btn-warning btn-sm">Agregar</a>
+                <p class="fw-bold text-dark">$19.990</p>
+                <a href="detalle-producto.html" class="btn btn-outline-dark btn-sm me-2">Ver más</a>
+                <a href="#" class="btn btn-dark btn-sm">Agregar</a>
               </div>
             </div>
           </article>
@@ -139,9 +148,9 @@
               <img src="asens/img/pantalon7.jpeg" class="card-img-top" alt="Pantalón 7" />
               <div class="card-body text-center">
                 <h5 class="card-title">Pantalón 7</h5>
-                <p class="fw-bold text-warning">$9.990</p>
-                <a href="detalle.html" class="btn btn-outline-dark btn-sm me-2">Ver más</a>
-                <a href="#" class="btn btn-warning btn-sm">Agregar</a>
+                <p class="fw-bold text-dark">$9.990</p>
+                <a href="detalle-producto.html" class="btn btn-outline-dark btn-sm me-2">Ver más</a>
+                <a href="#" class="btn btn-dark btn-sm">Agregar</a>
               </div>
             </div>
           </article>
@@ -153,49 +162,35 @@
   </main>
   <!-- ================= END MAIN ================= -->
 
-
   <!-- ================= FOOTER ================= -->
-  <footer class="text-light pt-5" style="background: #111">
-    <div class="container">
-      <div class="row">
+<footer class="footer text-light py-4">
+  <div class="container text-center">
 
-        <!-- Descripción -->
-        <section class="col-md-4 mb-4">
-          <h5 class="fw-bold text-warning">Urban C</h5>
-          <p class="text-white">Ropa urbana con estilo y comodidad. Vive la moda callejera con nosotros.</p>
-        </section>
+    <!-- Marca -->
+    <h5 class="fw-bold text-light mb-3">Urban C</h5>
 
-        <!-- Enlaces -->
-        <nav class="col-md-4 mb-4">
-          <h6 class="fw-bold text-white">Enlaces</h6>
-          <ul class="list-unstyled">
-            <li><a href="index.html" class="text-white text-decoration-none">Inicio</a></li>
-            <li><a href="productos.html" class="text-white text-decoration-none">Productos</a></li>
-            <li><a href="nosotros.html" class="text-white text-decoration-none">Nosotros</a></li>
-            <li><a href="contacto.html" class="text-white text-decoration-none">Contacto</a></li>
-          </ul>
-        </nav>
+    <!-- Enlaces -->
+    <nav class="mb-3">
+      <a href="index.html" class="footer-link mx-2">Inicio</a>
+      <a href="productos.html" class="footer-link mx-2">Productos</a>
+      <a href="nosotros.html" class="footer-link mx-2">Nosotros</a>
+      <a href="contacto.html" class="footer-link mx-2">Contacto</a>
+    </nav>
 
-        <!-- Redes sociales -->
-        <aside class="col-md-4 mb-4">
-          <h6 class="fw-bold text-white">Síguenos</h6>
-          <div class="d-flex gap-3">
-            <a href="#" class="text-warning fs-4"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="text-warning fs-4"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="text-warning fs-4"><i class="bi bi-tiktok"></i></a>
-          </div>
-        </aside>
-
-      </div>
-
-      <!-- Línea final -->
-      <div class="text-center py-3 border-top border-secondary mt-3">
-        <small class="text-white">&copy; 2025 Urban C. Todos los derechos reservados.</small>
-      </div>
+    <!-- Redes sociales -->
+    <div class="mb-3">
+      <a href="#" class="social-link mx-2"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="social-link mx-2"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="social-link mx-2"><i class="bi bi-tiktok"></i></a>
     </div>
-  </footer>
-  <!-- ================= END FOOTER ================= -->
 
+    <!-- Derechos -->
+    <small class="text-white-50">
+      &copy; 2025 <span class="text-light">Urban C</span>. Todos los derechos reservados.
+    </small>
+
+  </div>
+</footer>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
